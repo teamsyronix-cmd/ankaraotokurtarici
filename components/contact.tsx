@@ -17,7 +17,7 @@ export function Contact() {
     <section id="iletisim" className="bg-background py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
+          <div data-reveal="left">
             <span className="text-sm font-bold uppercase tracking-wider text-accent-brand">
               İletişim
             </span>
@@ -31,10 +31,10 @@ export function Contact() {
 
             <a
               href={PHONE_HREF}
-              className="mt-8 flex items-center gap-4 rounded-2xl bg-primary p-5 transition-opacity hover:opacity-95"
+              className="mt-8 flex items-center gap-4 rounded-2xl bg-primary p-5 transition-all hover:-translate-y-0.5 hover:shadow-lg"
             >
-              <span className="flex size-14 shrink-0 items-center justify-center rounded-xl bg-accent-brand text-accent-brand-foreground">
-                <Phone className="size-6" aria-hidden="true" />
+              <span className="animate-pulse-ring flex size-14 shrink-0 items-center justify-center rounded-xl bg-accent-brand text-accent-brand-foreground">
+                <Phone className="animate-ring size-6" aria-hidden="true" />
               </span>
               <span className="flex flex-col">
                 <span className="text-sm font-medium text-primary-foreground/70">
@@ -47,9 +47,12 @@ export function Contact() {
             </a>
           </div>
 
-          <div className="rounded-3xl border border-border bg-card p-6 shadow-sm sm:p-8">
+          <div
+            data-reveal="right"
+            className="rounded-3xl border border-border bg-card p-6 shadow-sm sm:p-8"
+          >
             {submitted ? (
-              <div className="flex h-full min-h-64 flex-col items-center justify-center text-center">
+              <div className="animate-in fade-in zoom-in-95 flex h-full min-h-64 flex-col items-center justify-center text-center duration-500">
                 <CheckCircle2
                   className="size-14 text-accent-brand"
                   aria-hidden="true"
@@ -127,7 +130,7 @@ export function Contact() {
 
                 <button
                   type="submit"
-                  className="mt-2 inline-flex h-12 items-center justify-center rounded-xl bg-accent-brand text-base font-bold text-accent-brand-foreground transition-all hover:brightness-95"
+                  className="shine mt-2 inline-flex h-12 items-center justify-center rounded-xl bg-accent-brand text-base font-bold text-accent-brand-foreground transition-all hover:brightness-95 active:scale-[0.98]"
                 >
                   Talebi Gönder
                 </button>

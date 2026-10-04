@@ -26,7 +26,7 @@ export function WhyUs() {
   return (
     <section className="bg-muted py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <div data-reveal className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-accent-brand">
             Farkımız
           </span>
@@ -36,12 +36,14 @@ export function WhyUs() {
         </div>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {FEATURES.map((feature) => (
+          {FEATURES.map((feature, index) => (
             <div
               key={feature.title}
-              className="flex items-center gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm"
+              data-reveal
+              style={{ '--delay': `${(index % 3) * 90}ms` } as React.CSSProperties}
+              className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-5 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-brand/40 hover:shadow-md"
             >
-              <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-accent-brand/15 text-accent-brand">
+              <span className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-accent-brand/15 text-accent-brand transition-colors duration-300 group-hover:bg-accent-brand group-hover:text-accent-brand-foreground">
                 <feature.icon className="size-5" aria-hidden="true" />
               </span>
               <span className="font-heading text-base font-semibold text-foreground">
@@ -52,9 +54,11 @@ export function WhyUs() {
         </div>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-3">
-          {STATS.map((stat) => (
+          {STATS.map((stat, index) => (
             <div
               key={stat.label}
+              data-reveal="zoom"
+              style={{ '--delay': `${index * 120}ms` } as React.CSSProperties}
               className="rounded-2xl bg-primary p-8 text-center"
             >
               <p className="font-heading text-2xl font-extrabold text-accent-brand sm:text-3xl">

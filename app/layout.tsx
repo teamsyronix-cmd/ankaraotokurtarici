@@ -45,7 +45,17 @@ export default function RootLayout({
     <html
       lang="tr"
       className={`light ${inter.variable} ${manrope.variable} bg-background`}
+      data-scroll-behavior="smooth"
+      suppressHydrationWarning
     >
+      <head>
+        {/* Kaydırma animasyonları yalnızca JS varken devreye girsin diye ilk boyamadan önce eklenir */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "document.documentElement.classList.add('js')",
+          }}
+        />
+      </head>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}

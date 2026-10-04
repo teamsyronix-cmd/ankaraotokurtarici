@@ -25,7 +25,7 @@ export function Process() {
   return (
     <section className="bg-muted py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <div data-reveal className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-accent-brand">
             Hizmet Süreci
           </span>
@@ -35,12 +35,14 @@ export function Process() {
         </div>
 
         <div className="mt-12 grid gap-6 md:grid-cols-3">
-          {STEPS.map((step) => (
+          {STEPS.map((step, index) => (
             <div
               key={step.number}
-              className="relative flex flex-col items-center rounded-2xl border border-border bg-card p-8 text-center shadow-sm"
+              data-reveal
+              style={{ '--delay': `${index * 180}ms` } as React.CSSProperties}
+              className="group relative flex flex-col items-center rounded-2xl border border-border bg-card p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md"
             >
-              <span className="flex size-16 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
+              <span className="flex size-16 items-center justify-center rounded-2xl bg-primary text-primary-foreground transition-transform duration-300 group-hover:scale-105">
                 <step.icon
                   className="size-7 text-accent-brand"
                   aria-hidden="true"

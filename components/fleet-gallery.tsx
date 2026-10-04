@@ -59,7 +59,7 @@ export function FleetGallery() {
   return (
     <section id="filo" className="bg-secondary py-20 md:py-24">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
-        <div className="max-w-2xl">
+        <div data-reveal className="max-w-2xl">
           <span className="text-sm font-bold uppercase tracking-wider text-accent-brand">
             Araç Filomuz
           </span>
@@ -75,7 +75,11 @@ export function FleetGallery() {
 
         <ul className="mt-10 grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
           {FLEET_PHOTOS.map((photo, index) => (
-            <li key={photo.src}>
+            <li
+              key={photo.src}
+              data-reveal="zoom"
+              style={{ '--delay': `${(index % 4) * 80}ms` } as React.CSSProperties}
+            >
               <button
                 type="button"
                 onClick={() => setActiveIndex(index)}
@@ -99,7 +103,7 @@ export function FleetGallery() {
           role="dialog"
           aria-modal="true"
           aria-label="Araç filosu fotoğraf görüntüleyici"
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-primary/95 p-4 backdrop-blur-sm"
+          className="animate-in fade-in fixed inset-0 z-[100] flex items-center justify-center bg-primary/95 p-4 backdrop-blur-sm duration-200"
           onClick={close}
         >
           <button
@@ -128,9 +132,10 @@ export function FleetGallery() {
             onClick={(e) => e.stopPropagation()}
           >
             <img
+              key={activeIndex}
               src={FLEET_PHOTOS[activeIndex].src || '/placeholder.svg'}
               alt={FLEET_PHOTOS[activeIndex].alt}
-              className="max-h-[75vh] w-auto rounded-2xl object-contain shadow-2xl"
+              className="animate-in fade-in zoom-in-95 max-h-[75vh] w-auto rounded-2xl object-contain shadow-2xl duration-300"
             />
             <figcaption className="text-center text-sm text-primary-foreground/80">
               {FLEET_PHOTOS[activeIndex].alt}

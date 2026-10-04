@@ -1,0 +1,258 @@
+{
+  "campaigns": [
+    {
+      "id": "ankara-oto-cekici",
+      "name": "Arama · Ankara Oto Çekici",
+      "status": "enabled",
+      "objective": "leads",
+      "type": "search",
+      "conversionGoals": [
+        "calls",
+        "forms"
+      ],
+      "bidding": "conversions",
+      "bidTarget": null,
+      "networks": {
+        "searchPartners": false,
+        "display": false
+      },
+      "locations": [
+        "Ankara, Türkiye"
+      ],
+      "locationOption": "presence",
+      "languages": [
+        "tr"
+      ],
+      "schedule": {
+        "allDay": true,
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "from": "00:00",
+        "to": "24:00"
+      },
+      "devices": [
+        "mobile",
+        "desktop",
+        "tablet"
+      ],
+      "keywords": [
+        "[ankara oto çekici]",
+        "\"ankara çekici\"",
+        "\"oto kurtarma ankara\"",
+        "[en yakın çekici]",
+        "çekici çağır ankara",
+        "\"ankara oto kurtarıcı\""
+      ],
+      "negativeKeywords": [
+        "oyuncak",
+        "iş ilanı",
+        "satılık çekici",
+        "ikinci el"
+      ],
+      "ad": {
+        "finalUrl": "https://ankaraotokurtarici.com",
+        "path1": "oto-cekici",
+        "path2": "ankara",
+        "headlines": [
+          "Ankara Oto Çekici 7/24",
+          "Dakikalar İçinde Yanınızda",
+          "Hemen Ara: 0541 377 01 72",
+          "Kayar Kasa Çekici Hizmeti",
+          "Uygun Fiyat, Hızlı Hizmet",
+          "Tüm İlçelere Oto Kurtarma"
+        ],
+        "descriptions": [
+          "Ankara’nın her ilçesine 7/24 oto çekici ve kurtarma. Hemen arayın, hızla gelelim.",
+          "Kayar kasa çekicilerle aracınızı hasarsız taşıyoruz. Şehir içi ve şehirlerarası."
+        ]
+      },
+      "assets": {
+        "phone": "+90 541 377 01 72",
+        "callouts": [
+          "7/24 Hizmet",
+          "Hasarsız Taşıma",
+          "Şehirlerarası Çekici",
+          "Uygun Fiyat"
+        ],
+        "sitelinks": [
+          {
+            "text": "Hizmetlerimiz",
+            "url": "https://ankaraotokurtarici.com/#hizmetler"
+          },
+          {
+            "text": "Araç Filomuz",
+            "url": "https://ankaraotokurtarici.com/#filo"
+          },
+          {
+            "text": "Hizmet Bölgeleri",
+            "url": "https://ankaraotokurtarici.com/#bolgeler"
+          },
+          {
+            "text": "İletişim",
+            "url": "https://ankaraotokurtarici.com/#iletisim"
+          }
+        ]
+      }
+    },
+    {
+      "id": "yol-yardim",
+      "name": "Arama · Yol Yardım 7/24",
+      "status": "enabled",
+      "objective": "leads",
+      "type": "search",
+      "conversionGoals": [
+        "calls"
+      ],
+      "bidding": "clicks",
+      "bidTarget": 12,
+      "networks": {
+        "searchPartners": true,
+        "display": false
+      },
+      "locations": [
+        "Ankara, Türkiye"
+      ],
+      "locationOption": "presence",
+      "languages": [
+        "tr"
+      ],
+      "schedule": {
+        "allDay": true,
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "from": "00:00",
+        "to": "24:00"
+      },
+      "devices": [
+        "mobile"
+      ],
+      "keywords": [
+        "\"yol yardım ankara\"",
+        "[akü takviye ankara]",
+        "\"lastik değişimi yol yardım\"",
+        "aracım yolda kaldı",
+        "\"7/24 yol yardım\""
+      ],
+      "negativeKeywords": [
+        "sigorta",
+        "kasko",
+        "ücretsiz"
+      ],
+      "ad": {
+        "finalUrl": "https://ankaraotokurtarici.com",
+        "path1": "yol-yardim",
+        "path2": "7-24",
+        "headlines": [
+          "Yolda mı Kaldınız Hemen Arayın",
+          "Ankara 7/24 Yol Yardım",
+          "Akü Takviye ve Lastik Değişimi",
+          "Gece Gündüz Kesintisiz Hizmet"
+        ],
+        "descriptions": [
+          "Akü, lastik, yakıt ve çekici desteği. Ankara genelinde 7/24 yol yardım hizmeti.",
+          "Bulunduğunuz konuma en yakın ekibimizi hemen yönlendirelim. Tek telefonla yardım."
+        ]
+      },
+      "assets": {
+        "phone": "+90 541 377 01 72",
+        "callouts": [
+          "7/24 Ulaşılabilir",
+          "Hızlı Müdahale",
+          "Deneyimli Ekip"
+        ],
+        "sitelinks": [
+          {
+            "text": "Hemen Ara",
+            "url": "https://ankaraotokurtarici.com/#iletisim"
+          },
+          {
+            "text": "Hizmetlerimiz",
+            "url": "https://ankaraotokurtarici.com/#hizmetler"
+          }
+        ]
+      }
+    },
+    {
+      "id": "google-haritalar",
+      "name": "Yerel · Google Haritalar",
+      "status": "enabled",
+      "objective": "local",
+      "type": "pmax",
+      "conversionGoals": [
+        "directions",
+        "calls"
+      ],
+      "bidding": "conversions",
+      "bidTarget": null,
+      "networks": {
+        "searchPartners": false,
+        "display": false
+      },
+      "locations": [
+        "Ankara, Türkiye",
+        "Kırıkkale, Türkiye"
+      ],
+      "locationOption": "presence",
+      "languages": [
+        "tr"
+      ],
+      "schedule": {
+        "allDay": true,
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "from": "00:00",
+        "to": "24:00"
+      },
+      "devices": [
+        "mobile",
+        "desktop",
+        "tablet"
+      ],
+      "keywords": [],
+      "negativeKeywords": [],
+      "ad": {
+        "finalUrl": "https://ankaraotokurtarici.com",
+        "path1": "",
+        "path2": "",
+        "headlines": [
+          "Ankara Oto Kurtarma",
+          "Size En Yakın Çekici",
+          "7/24 Oto Çekici Hizmeti"
+        ],
+        "descriptions": [
+          "Ankara’da size en yakın oto çekici. Haritadan yol tarifi alın ya da hemen arayın.",
+          "Tüm ilçelerde hızlı ve güvenli araç taşıma hizmeti."
+        ]
+      },
+      "assets": {
+        "phone": "+90 541 377 01 72",
+        "callouts": [
+          "7/24 Hizmet",
+          "Tüm İlçeler"
+        ],
+        "sitelinks": []
+      }
+    }
+  ]
+}

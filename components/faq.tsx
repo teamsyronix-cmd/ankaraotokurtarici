@@ -28,7 +28,7 @@ export function Faq() {
   return (
     <section className="bg-muted py-20 md:py-24">
       <div className="mx-auto max-w-3xl px-4 lg:px-6">
-        <div className="text-center">
+        <div data-reveal className="text-center">
           <span className="text-sm font-bold uppercase tracking-wider text-accent-brand">
             S.S.S.
           </span>
@@ -43,6 +43,8 @@ export function Faq() {
             return (
               <div
                 key={item.q}
+                data-reveal
+                style={{ '--delay': `${index * 80}ms` } as React.CSSProperties}
                 className="overflow-hidden rounded-2xl border border-border bg-card shadow-sm"
               >
                 <button

@@ -5,7 +5,7 @@ export function SiteFooter() {
   return (
     <footer className="bg-primary pb-24 pt-16 md:pb-16">
       <div className="mx-auto max-w-6xl px-4 lg:px-6">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div data-reveal className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3">
               <span className="flex size-10 items-center justify-center rounded-xl bg-primary-foreground/10">

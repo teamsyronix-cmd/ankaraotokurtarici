@@ -11,6 +11,7 @@ import { Faq } from '@/components/faq'
 import { Contact } from '@/components/contact'
 import { SiteFooter } from '@/components/site-footer'
 import { MobileCallBar } from '@/components/mobile-call-bar'
+import { ScrollReveal } from '@/components/scroll-reveal'
 
 export default function Page() {
   return (
@@ -30,6 +31,7 @@ export default function Page() {
       </main>
       <SiteFooter />
       <MobileCallBar />
+      <ScrollReveal />
     </div>
   )
 }
